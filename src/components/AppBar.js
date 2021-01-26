@@ -6,21 +6,23 @@ import { Avatar, Title, Paragraph, IconButton, Colors,  ToggleButton, Searchbar,
 const AppBar =({navigation}) =>{
 
   return <Appbar.Header  style={styles.top} >
-        <Appbar.BackAction onPress={navigation.goBack} />
-        <Appbar.Content color={Colors.black} title='Tasty List'/>
+        {navigation.canGoBack() &&
+          <Appbar.BackAction onPress={navigation.goBack} />}
+
+        <Appbar.Content style={styles.title} color={Colors.black} title='Tasty List'/>
         <Appbar.Action
           icon="plus"
           color={Colors.grey500}
-          size={20}
+          size={25}
           onPress={() => console.log('Pressed')}
         />
         <Appbar.Action
           icon="heart"
           color={Colors.grey500}
-          size={20}
+          size={25}
           onPress={() => console.log('Pressed')}
         />
-        <Appbar.Action icon="menu" size={20} color={Colors.grey500} value="left" />
+        <Appbar.Action icon="menu" size={25} color={Colors.grey500} value="left" />
         </Appbar.Header>
 }
 
@@ -29,8 +31,12 @@ const AppBar =({navigation}) =>{
 const styles = StyleSheet.create({
 top:{
   backgroundColor: 'rgb(255,255,255)'
-}
+},
 
+title:{
+  fontSize: 30,
+  fontWeight: "bold",
+}
 
 });
 

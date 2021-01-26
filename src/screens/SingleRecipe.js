@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 const SingleRecipe = (props) =>{
   let recipe = props.route.params.recipe;
     return <ScrollView><Card style={styles.container} >
-    <Card.Title title={recipe.title} subtitle="Card Subtitle"  />
+    <Card.Title title={recipe.title} subtitle={recipe.category}  />
     <Card.Content>
     <DataTable>
       <Card.Cover source={{ uri: recipe.imgUrl }} />
@@ -17,8 +17,8 @@ const SingleRecipe = (props) =>{
         </DataTable.Header>
 
         {recipe.ingredients.map((ing) =>
-          <DataTable.Row>
-            <DataTable.Cell key={ing.title}>{ing.title}</DataTable.Cell>
+          <DataTable.Row key={ing.title}>
+            <DataTable.Cell>{ing.title}</DataTable.Cell>
             <DataTable.Cell>{ing.amount}</DataTable.Cell>
           </DataTable.Row>
         )}

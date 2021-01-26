@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, View, StyleSheet, Link} from 'react-native';
 import {Card, Avatar, Button, Title, Paragraph, IconButton, Colors,  ToggleButton, Searchbar, Appbar, DataTable} from 'react-native-paper';
 import { connect } from 'react-redux';
@@ -7,12 +7,15 @@ import {searchRecipes} from '../reduxStore'
 import { ScrollView } from 'react-native-gesture-handler';
 
 const RecipeCard = ({recipe, onPress}) => {
+    let [liked, setLiked] = useState(false);
+
     return <Card onPress={onPress} style={styles.container}>
-          <Card.Title title={recipe.title} subtitle="Card Subtitle"  />
+          <Card.Title title={recipe.title} subtitle={recipe.category}/>
           <Card.Cover style={styles.img} source={{ uri: recipe.imgUrl }} />
           <Card.Actions >
-          <IconButton icon="heart" size={34} color={Colors.red600}
-            onPress={() => console.log('Pressed')}>Add to Favorite
+          <IconButton icon="heart" size={34}
+            color={liked ? Colors.red600 : Colors.grey300}
+            onPress={() => setLiked(!liked)}>Add to Favorite
           </IconButton>
           </Card.Actions>
         </Card>
