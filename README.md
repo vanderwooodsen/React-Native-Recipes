@@ -13,8 +13,7 @@
 https://www.youtube.com/watch?v=XvNOehURSuU
 
 ## Screenshots
-<img src="/Users/christismac/Desktop/My Projects/Recips Project/Recipes/Tasty_list/screenshots/tl1.png" alt="firstScr"
-	title="first screenshot of app" width="40"  />
+![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl1.png)
 ![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl2.png)
 ![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl3.png)
 ![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl4.png)
