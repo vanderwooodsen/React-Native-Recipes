@@ -10,4 +10,4 @@
 - React Native Paper.
 
 ## Screenshots
-![1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tastyList1.png)
+![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/screenshot1.png)
