@@ -13,7 +13,7 @@
 https://www.youtube.com/watch?v=XvNOehURSuU
 
 ## Screenshots
-![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl1.png)
+![tastyList1][[https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl1.png|width=80]]
 ![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl2.png)
 ![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl3.png)
 ![tastyList1](https://raw.githubusercontent.com/vanderwooodsen/React-Native-Recipes/master/screenshots/tl4.png)
